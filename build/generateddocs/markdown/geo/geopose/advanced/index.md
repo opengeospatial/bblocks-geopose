@@ -31,16 +31,16 @@ definitions:
     properties:
       x:
         type: number
-        x-jsonld-id: http://example.com/geopose/x
+        x-jsonld-id: https://w3id.org/ogc/geopose/x
       y:
         type: number
-        x-jsonld-id: http://example.com/geopose/y
+        x-jsonld-id: https://w3id.org/ogc/geopose/y
       z:
         type: number
-        x-jsonld-id: http://example.com/geopose/z
+        x-jsonld-id: https://w3id.org/ogc/geopose/z
       w:
         type: number
-        x-jsonld-id: http://example.com/geopose/w
+        x-jsonld-id: https://w3id.org/ogc/geopose/w
     required:
     - x
     - y
@@ -52,7 +52,7 @@ properties:
     $ref: '#/definitions/FrameSpecification'
   quaternion:
     $ref: '#/definitions/Quaternion'
-    x-jsonld-id: http://example.com/geopose/quaternion
+    x-jsonld-id: https://w3id.org/ogc/geopose/quaternion
   validTime:
     type: integer
 required:
@@ -60,14 +60,19 @@ required:
 - quaternion
 x-jsonld-extra-terms:
   position:
-    x-jsonld-id: http://example.com/geopose/position
+    x-jsonld-id: https://w3id.org/ogc/geopose/position
     x-jsonld-context:
       lat: http://www.w3.org/2003/01/geo/wgs84_pos#lat
       lon: http://www.w3.org/2003/01/geo/wgs84_pos#long
-      h: http://example.com/geopose/h
+      h: https://w3id.org/ogc/geopose/h
 x-jsonld-prefixes:
-  geopose: http://example.com/geopose/
+  geopose: https://w3id.org/ogc/geopose/
   geo: http://www.w3.org/2003/01/geo/wgs84_pos#
+x-bblocks-metadata:
+  itemIdentifier: ogc.geo.geopose.advanced
+  register: https://opengeospatial.github.io/geopose-bblocks/build/register.json
+  version: '0.1'
+  dateOfLastChange: '2026-11-06'
 
 ```
 
@@ -82,6 +87,14 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "position": {
+      "@id": "geopose:position",
+      "@context": {
+        "lat": "geo:lat",
+        "lon": "geo:long",
+        "h": "geopose:h"
+      }
+    },
     "quaternion": {
       "@context": {
         "x": "geopose:x",
@@ -91,15 +104,7 @@ Links to the schema:
       },
       "@id": "geopose:quaternion"
     },
-    "position": {
-      "@id": "geopose:position",
-      "@context": {
-        "lat": "geo:lat",
-        "lon": "geo:long",
-        "h": "geopose:h"
-      }
-    },
-    "geopose": "http://example.com/geopose/",
+    "geopose": "https://w3id.org/ogc/geopose/",
     "geo": "http://www.w3.org/2003/01/geo/wgs84_pos#",
     "@version": 1.1
   }

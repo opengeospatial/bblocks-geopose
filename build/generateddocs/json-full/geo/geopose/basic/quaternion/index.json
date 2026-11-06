@@ -10,7 +10,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-05-14",
+  "dateOfLastChange": "2026-11-06",
   "sources": [
     {
       "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
@@ -24,15 +24,15 @@
     "application/json": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json"
   },
   "group": "GeoPose",
-  "shaclRules": {},
+  "shaclShapes": {},
   "ldContext": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld",
   "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/remote_cache/",
   "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.Quaternion.Schema.json",
   "sourceLdContext": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/quaternion/context.jsonld",
+  "resolvedSchemaProperties": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/resolvedProperties.json",
   "sourceFiles": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/quaternion/",
-  "rdfData": [],
   "validationPassed": true,
-  "annotatedSchema": "description: 'Basic-Quaternion: Basic GeoPose using quaternion to specify orientation'\ndefinitions:\n  Position:\n    type: object\n    properties:\n      lat:\n        type: number\n        x-jsonld-id: http://www.w3.org/2003/01/geo/wgs84_pos#lat\n      lon:\n        type: number\n        x-jsonld-id: http://www.w3.org/2003/01/geo/wgs84_pos#long\n      h:\n        type: number\n        x-jsonld-id: http://example.com/geopose/h\n    required:\n    - lat\n    - lon\n    - h\n  Quaternion:\n    type: object\n    properties:\n      x:\n        type: number\n        x-jsonld-id: http://example.com/geopose/x\n      y:\n        type: number\n        x-jsonld-id: http://example.com/geopose/y\n      z:\n        type: number\n        x-jsonld-id: http://example.com/geopose/z\n      w:\n        type: number\n        x-jsonld-id: http://example.com/geopose/w\n    required:\n    - x\n    - y\n    - z\n    - w\ntype: object\nproperties:\n  position:\n    $ref: '#/definitions/Position'\n    x-jsonld-id: http://example.com/geopose/position\n  quaternion:\n    $ref: '#/definitions/Quaternion'\n    x-jsonld-id: http://example.com/geopose/quaternion\nrequired:\n- position\n- quaternion\nx-jsonld-prefixes:\n  geopose: http://example.com/geopose/\n  geo: http://www.w3.org/2003/01/geo/wgs84_pos#\n",
+  "annotatedSchema": "description: 'Basic-Quaternion: Basic GeoPose using quaternion to specify orientation'\ndefinitions:\n  Position:\n    type: object\n    properties:\n      lat:\n        type: number\n        x-jsonld-id: http://www.w3.org/2003/01/geo/wgs84_pos#lat\n      lon:\n        type: number\n        x-jsonld-id: http://www.w3.org/2003/01/geo/wgs84_pos#long\n      h:\n        type: number\n        x-jsonld-id: https://w3id.org/ogc/geopose/h\n    required:\n    - lat\n    - lon\n    - h\n  Quaternion:\n    type: object\n    properties:\n      x:\n        type: number\n        x-jsonld-id: https://w3id.org/ogc/geopose/x\n      y:\n        type: number\n        x-jsonld-id: https://w3id.org/ogc/geopose/y\n      z:\n        type: number\n        x-jsonld-id: https://w3id.org/ogc/geopose/z\n      w:\n        type: number\n        x-jsonld-id: https://w3id.org/ogc/geopose/w\n    required:\n    - x\n    - y\n    - z\n    - w\ntype: object\nproperties:\n  position:\n    $ref: '#/definitions/Position'\n    x-jsonld-id: https://w3id.org/ogc/geopose/position\n  quaternion:\n    $ref: '#/definitions/Quaternion'\n    x-jsonld-id: https://w3id.org/ogc/geopose/quaternion\nrequired:\n- position\n- quaternion\nx-jsonld-prefixes:\n  geopose: https://w3id.org/ogc/geopose/\n  geo: http://www.w3.org/2003/01/geo/wgs84_pos#\nx-bblocks-metadata:\n  itemIdentifier: ogc.geo.geopose.basic.quaternion\n  register: https://opengeospatial.github.io/geopose-bblocks/build/register.json\n  version: '0.1'\n  dateOfLastChange: '2026-11-06'\n",
   "gitRepository": "https://github.com/opengeospatial/geopose-bblocks",
   "gitPath": "_sources/basic/quaternion"
 }

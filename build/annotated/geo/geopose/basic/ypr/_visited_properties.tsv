@@ -1,9 +1,9 @@
-path	@id
-/position	http://example.com/geopose/position
-/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat
-/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long
-/position/h	http://example.com/geopose/h
-/angles	http://example.com/geopose/angles
-/angles/yaw	http://example.com/geopose/yaw
-/angles/pitch	http://example.com/geopose/pitch
-/angles/roll	http://example.com/geopose/roll
+path	@id	schema
+/position	https://w3id.org/ogc/geopose/position	/github/workspace/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/position/lat	http://www.w3.org/2003/01/geo/wgs84_pos#lat	/github/workspace/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/position/lon	http://www.w3.org/2003/01/geo/wgs84_pos#long	/github/workspace/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/position/h	https://w3id.org/ogc/geopose/h	/github/workspace/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/angles	https://w3id.org/ogc/geopose/angles	/github/workspace/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/angles/yaw	https://w3id.org/ogc/geopose/yaw	/github/workspace/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/angles/pitch	https://w3id.org/ogc/geopose/pitch	/github/workspace/build/annotated/geo/geopose/basic/ypr/schema.yaml
+/angles/roll	https://w3id.org/ogc/geopose/roll	/github/workspace/build/annotated/geo/geopose/basic/ypr/schema.yaml

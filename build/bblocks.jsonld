@@ -12,7 +12,11 @@
       "prof": "http://www.w3.org/ns/dx/prof/",
       "dcat": "http://www.w3.org/ns/dcat#",
       "modspec": "http://www.opengis.net/def/ont/modspec/",
-      "itemIdentifier": "@id",
+      "void": "http://rdfs.org/ns/void#",
+      "foaf": "http://xmlns.com/foaf/0.1/",
+      "role": "http://www.w3.org/ns/dx/prof/role/",
+      "shacl": "https://www.w3.org/TR/shacl/",
+      "owl": "http://www.w3.org/2002/07/owl#",
       "baseURL": "@id",
       "name": "rdfs:label",
       "abstract": {
@@ -39,6 +43,10 @@
         "@id": "dct:modified",
         "@type": "xsd:date"
       },
+      "modified": {
+        "@id": "dct:modified",
+        "@type": "xsd:dateTime"
+      },
       "scope": {
         "@id": "bblocks:scope",
         "@type": "@id",
@@ -53,14 +61,22 @@
           "link": "@id"
         }
       },
+      "license": {
+        "@id": "dct:license",
+        "@context": {
+          "name": "rdfs:label",
+          "url": {
+            "@id": "rdfs:seeAlso",
+            "@type": "@id"
+          }
+        }
+      },
       "schema": {
-        "@id": "bblocks:hasSchema",
-        "@type": "@id",
-        "@container": "@index",
-        "@index": "dct:format"
+        "@id": "prof:hasResource",
+        "@type": "@id"
       },
       "ldContext": {
-        "@id": "bblocks:hasJsonLdContext",
+        "@id": "prof:hasResource",
         "@type": "@id"
       },
       "sourceLdContext": {
@@ -74,8 +90,14 @@
         "@index": "dct:identifier",
         "@context": {
           "mediatype": "dct:format",
-          "url": "rdfs:isDefinedBy"
+          "url": {
+            "@id": "rdfs:isDefinedBy",
+            "@type": "@id"
+          }
         }
+      },
+      "rdfs:isDefinedBy": {
+        "@type": "@id"
       },
       "hasConcepts": {
         "@reverse": "skos:inScheme"
@@ -84,39 +106,122 @@
         "@id": "bblocks:dependsOn",
         "@type": "@id"
       },
-      "profileOf": {
+      "isProfileOf": {
         "@id": "prof:isProfileOf",
         "@type": "@id"
       },
+      "isDescribedBy": {
+        "@id": "http://www.iana.org/assignments/relation/describedby",
+        "@type": "@id"
+      },
+      "hasFormat": {
+        "@id": "dct:hasFormat",
+        "@type": "@id"
+      },
+      "seeAlso": {
+        "@id": "rdfs:seeAlso",
+        "@type": "@id"
+      },
       "tags": "dcat:keyword",
-      "shaclRules": {
-        "@id": "bblocks:hasShaclRule",
-        "@type": "@id",
-        "@container": "@index",
-        "@index": "rdfs:seeAlso"
+      "shaclShapes": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
       },
       "validationReport": {
         "@id": "bblocks:hasValidationReport",
         "@type": "@id"
       },
+      "validationPassed": "bblocks:validationPassed",
       "imports": {
-        "@id": "bblocks:imports",
+        "@id": "owl:imports",
         "@type": "@id"
       },
       "conformanceClasses": {
         "@id": "modspec:class",
         "@type": "@id"
+      },
+      "requirementClasses": {
+        "@id": "modspec:requirementsClass",
+        "@type": "@id"
+      },
+      "sparqlEndpoint": {
+        "@id": "void:sparqlEndpoint",
+        "@type": "@id"
+      },
+      "viewerURL": {
+        "@id": "foaf:homepage",
+        "@type": "@id"
+      },
+      "dct:conformsTo": {
+        "@type": "@id"
+      },
+      "prof:hasRole": {
+        "@type": "@id"
+      },
+      "prof:hasArtifact": {
+        "@type": "@id"
+      },
+      "rdfs:seeAlso": {
+        "@type": "@id"
+      },
+      "ontology": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "rdfData": {
+        "@id": "prof:hasResource",
+        "@type": "@id"
+      },
+      "links": {
+        "@id": "prof:hasResource",
+        "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld"
+      },
+      "concept": {
+        "@id": "skos:closeMatch",
+        "@type": "@id"
+      },
+      "rdfType": {
+        "@id": "rdfs:subClassOf",
+        "@type": "@id"
+      },
+      "resources": {
+        "@id": "prof:hasResource",
+        "@context": {
+          "role": {
+            "@id": "prof:hasRole",
+            "@type": "@id"
+          },
+          "constraints": "role:constraints",
+          "example": "role:example",
+          "guidance": "role:guidance",
+          "mapping": "role:mapping",
+          "schema": "role:schema",
+          "specification": "role:specification",
+          "validation": "role:validation",
+          "vocabulary": "role:vocabulary",
+          "data": "role:data",
+          "ref": {
+            "@id": "prof:hasArtifact",
+            "@type": "@id"
+          },
+          "format": "dct:format",
+          "conformsTo": {
+            "@id": "dct:conformsTo",
+            "@type": "@id"
+          }
+        }
       }
     }
   ],
+  "metaRegistry": "https://w3id.org/ogc/bblocks/meta-register.json",
   "name": "Building Blocks - GeoPose",
   "abstract": "[GeoPose](https://www.geopose.org/) Building Blocks\n",
-  "modified": "2025-05-14T12:25:49.082152",
+  "modified": "2026-11-06T09:24:29.276090",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"d54737439f35f87501c8deabf419a6a892b42929",
-      "shortCommitId": "\"d54737",
-      "date": "2025-04-28T10:28:17+00:00\""
+      "commitId": "\"c1af50a182c92d7ab055f34158d5605167dfe786",
+      "shortCommitId": "\"c1af50",
+      "date": "2026-11-04T12:47:53+00:00\""
     }
   },
   "gitRepository": "https://github.com/opengeospatial/geopose-bblocks",
@@ -124,12 +229,35 @@
   "baseURL": "https://opengeospatial.github.io/geopose-bblocks/",
   "viewerURL": "https://opengeospatial.github.io/geopose-bblocks/",
   "validationReport": "https://opengeospatial.github.io/geopose-bblocks/build/tests/report.html",
+  "validationReportJson": "https://opengeospatial.github.io/geopose-bblocks/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
+  "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/_cache",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://opengeospatial.github.io/geopose-bblocks/build/register.json",
+      "type": "application/json",
+      "title": "This Building Blocks Register in JSON format"
+    },
+    {
+      "rel": "self",
+      "href": "https://opengeospatial.github.io/geopose-bblocks/build/bblocks.ttl",
+      "type": "text/turtle",
+      "title": "This Building Blocks Register in RDF Turtle format"
+    },
+    {
+      "rel": "self",
+      "href": "https://opengeospatial.github.io/geopose-bblocks/build/bblocks.jsonld",
+      "type": "application/ld+json",
+      "title": "This Building Blocks Register in JSON-LD format"
+    }
+  ],
   "@type": [
     "skos:ConceptScheme",
-    "dcat:Catalog"
+    "dcat:Catalog",
+    "bblocks:BBlocksRegister"
   ],
   "skos:prefLabel": "Building Blocks - GeoPose",
   "hasConcepts": [
@@ -143,7 +271,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-05-14",
+      "dateOfLastChange": "2026-11-06",
       "sources": [
         {
           "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
@@ -152,38 +280,65 @@
       ],
       "maturity": "proposal",
       "scope": "geo",
-      "schema": {
-        "application/yaml": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/schema.json"
-      },
+      "schema": [
+        {
+          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
       "group": "GeoPose",
-      "shaclRules": {},
-      "ldContext": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/context.jsonld",
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Advanced.Schema.json",
       "sourceLdContext": "https://opengeospatial.github.io/geopose-bblocks/_sources/advanced/context.jsonld",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/resolvedProperties.json",
       "sourceFiles": "https://opengeospatial.github.io/geopose-bblocks/_sources/advanced/",
-      "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/advanced/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/json-full/geo/geopose/advanced/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/advanced/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://opengeospatial.github.io/geopose-bblocks/bblock/ogc.geo.geopose.advanced"
         }
       },
+      "@id": "bblocks://ogc.geo.geopose.advanced",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
-        "dcat:Dataset"
-      ]
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "GeoPose Advanced",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "isDescribedBy": null,
+      "skos:topConceptOf": {
+        "@id": "https://opengeospatial.github.io/geopose-bblocks/"
+      }
     },
     {
       "itemIdentifier": "ogc.geo.geopose.basic.quaternion",
@@ -195,7 +350,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-05-14",
+      "dateOfLastChange": "2026-11-06",
       "sources": [
         {
           "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
@@ -204,38 +359,65 @@
       ],
       "maturity": "proposal",
       "scope": "geo",
-      "schema": {
-        "application/yaml": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json"
-      },
+      "schema": [
+        {
+          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
       "group": "GeoPose",
-      "shaclRules": {},
-      "ldContext": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld",
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.Quaternion.Schema.json",
       "sourceLdContext": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/quaternion/context.jsonld",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/resolvedProperties.json",
       "sourceFiles": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/quaternion/",
-      "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/basic/quaternion/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/json-full/geo/geopose/basic/quaternion/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/basic/quaternion/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://opengeospatial.github.io/geopose-bblocks/bblock/ogc.geo.geopose.basic.quaternion"
         }
       },
+      "@id": "bblocks://ogc.geo.geopose.basic.quaternion",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
-        "dcat:Dataset"
-      ]
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "GeoPose Basic-Quaternion",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "isDescribedBy": null,
+      "skos:topConceptOf": {
+        "@id": "https://opengeospatial.github.io/geopose-bblocks/"
+      }
     },
     {
       "itemIdentifier": "ogc.geo.geopose.basic.ypr",
@@ -247,7 +429,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-05-14",
+      "dateOfLastChange": "2026-11-06",
       "sources": [
         {
           "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
@@ -256,39 +438,77 @@
       ],
       "maturity": "proposal",
       "scope": "geo",
-      "schema": {
-        "application/yaml": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.json"
-      },
+      "schema": [
+        {
+          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
       "group": "GeoPose",
-      "shaclRules": {},
-      "ldContext": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
       "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json",
       "sourceLdContext": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/ypr/context.jsonld",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/resolvedProperties.json",
       "sourceFiles": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/ypr/",
-      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/opengeospatial/geopose-bblocks/blob/master/build/tests/geo/geopose/basic/ypr/",
       "documentation": {
-        "markdown": {
-          "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/basic/ypr/index.md"
-        },
         "json-full": {
           "mediatype": "application/json",
           "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/json-full/geo/geopose/basic/ypr/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/basic/ypr/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
           "url": "https://opengeospatial.github.io/geopose-bblocks/bblock/ogc.geo.geopose.basic.ypr"
         }
       },
+      "@id": "bblocks://ogc.geo.geopose.basic.ypr",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
-        "dcat:Dataset"
-      ]
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "GeoPose Basic-YPR",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "isDescribedBy": null,
+      "skos:topConceptOf": {
+        "@id": "https://opengeospatial.github.io/geopose-bblocks/"
+      }
+    }
+  ],
+  "skos:hasTopConcept": [
+    {
+      "@id": "bblocks://ogc.geo.geopose.advanced"
+    },
+    {
+      "@id": "bblocks://ogc.geo.geopose.basic.quaternion"
+    },
+    {
+      "@id": "bblocks://ogc.geo.geopose.basic.ypr"
     }
   ]
 }
