@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://opengeospatial.github.io/geopose-bblocks"
+      "@base": "https://opengeospatial.github.io/bblocks-geopose"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -216,40 +216,40 @@
   "metaRegistry": "https://w3id.org/ogc/bblocks/meta-register.json",
   "name": "Building Blocks - GeoPose",
   "abstract": "[GeoPose](https://www.geopose.org/) Building Blocks\n",
-  "modified": "2026-11-06T09:24:29.276090",
+  "modified": "2026-11-09T11:24:56.705912",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"c1af50a182c92d7ab055f34158d5605167dfe786",
-      "shortCommitId": "\"c1af50",
-      "date": "2026-11-04T12:47:53+00:00\""
+      "commitId": "\"fe84508ca45c287cb2c58b84725ef6cc398b9e4c",
+      "shortCommitId": "\"fe8450",
+      "date": "2026-11-06T11:55:06+00:00\""
     }
   },
-  "gitRepository": "https://github.com/opengeospatial/geopose-bblocks",
-  "gitHubRepository": "https://github.com/opengeospatial/geopose-bblocks/blob/master/",
-  "baseURL": "https://opengeospatial.github.io/geopose-bblocks/",
-  "viewerURL": "https://opengeospatial.github.io/geopose-bblocks/",
-  "validationReport": "https://opengeospatial.github.io/geopose-bblocks/build/tests/report.html",
-  "validationReportJson": "https://opengeospatial.github.io/geopose-bblocks/build/tests/report.json",
+  "gitRepository": "https://github.com/opengeospatial/bblocks-geopose",
+  "gitHubRepository": "https://github.com/opengeospatial/bblocks-geopose/blob/master/",
+  "baseURL": "https://opengeospatial.github.io/bblocks-geopose/",
+  "viewerURL": "https://opengeospatial.github.io/bblocks-geopose/",
+  "validationReport": "https://opengeospatial.github.io/bblocks-geopose/build/tests/report.html",
+  "validationReportJson": "https://opengeospatial.github.io/bblocks-geopose/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
-  "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/_cache",
+  "remoteCacheDir": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/geopose-bblocks/build/register.json",
+      "href": "https://opengeospatial.github.io/bblocks-geopose/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/geopose-bblocks/build/bblocks.ttl",
+      "href": "https://opengeospatial.github.io/bblocks-geopose/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/geopose-bblocks/build/bblocks.jsonld",
+      "href": "https://opengeospatial.github.io/bblocks-geopose/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }
@@ -282,13 +282,13 @@
       "scope": "geo",
       "schema": [
         {
-          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/advanced/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/advanced/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
@@ -297,29 +297,29 @@
       "group": "GeoPose",
       "shaclShapes": null,
       "ldContext": {
-        "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/advanced/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/remote_cache/",
+      "remoteCacheDir": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/advanced/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Advanced.Schema.json",
-      "sourceLdContext": "https://opengeospatial.github.io/geopose-bblocks/_sources/advanced/context.jsonld",
-      "resolvedSchemaProperties": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/advanced/resolvedProperties.json",
-      "sourceFiles": "https://opengeospatial.github.io/geopose-bblocks/_sources/advanced/",
+      "sourceLdContext": "https://opengeospatial.github.io/bblocks-geopose/_sources/advanced/context.jsonld",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/advanced/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/bblocks-geopose/_sources/advanced/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/json-full/geo/geopose/advanced/index.json"
+          "url": "https://opengeospatial.github.io/bblocks-geopose/build/generateddocs/json-full/geo/geopose/advanced/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/advanced/index.md"
+          "url": "https://opengeospatial.github.io/bblocks-geopose/build/generateddocs/markdown/geo/geopose/advanced/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/bblock/ogc.geo.geopose.advanced"
+          "url": "https://opengeospatial.github.io/bblocks-geopose/bblock/ogc.geo.geopose.advanced"
         }
       },
       "@id": "bblocks://ogc.geo.geopose.advanced",
@@ -337,7 +337,7 @@
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
-        "@id": "https://opengeospatial.github.io/geopose-bblocks/"
+        "@id": "https://opengeospatial.github.io/bblocks-geopose/"
       }
     },
     {
@@ -361,13 +361,13 @@
       "scope": "geo",
       "schema": [
         {
-          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/quaternion/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/quaternion/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
@@ -376,29 +376,29 @@
       "group": "GeoPose",
       "shaclShapes": null,
       "ldContext": {
-        "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/quaternion/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/remote_cache/",
+      "remoteCacheDir": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/quaternion/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.Quaternion.Schema.json",
-      "sourceLdContext": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/quaternion/context.jsonld",
-      "resolvedSchemaProperties": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/quaternion/resolvedProperties.json",
-      "sourceFiles": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/quaternion/",
+      "sourceLdContext": "https://opengeospatial.github.io/bblocks-geopose/_sources/basic/quaternion/context.jsonld",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/quaternion/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/bblocks-geopose/_sources/basic/quaternion/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/json-full/geo/geopose/basic/quaternion/index.json"
+          "url": "https://opengeospatial.github.io/bblocks-geopose/build/generateddocs/json-full/geo/geopose/basic/quaternion/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/basic/quaternion/index.md"
+          "url": "https://opengeospatial.github.io/bblocks-geopose/build/generateddocs/markdown/geo/geopose/basic/quaternion/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/bblock/ogc.geo.geopose.basic.quaternion"
+          "url": "https://opengeospatial.github.io/bblocks-geopose/bblock/ogc.geo.geopose.basic.quaternion"
         }
       },
       "@id": "bblocks://ogc.geo.geopose.basic.quaternion",
@@ -416,7 +416,7 @@
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
-        "@id": "https://opengeospatial.github.io/geopose-bblocks/"
+        "@id": "https://opengeospatial.github.io/bblocks-geopose/"
       }
     },
     {
@@ -440,13 +440,13 @@
       "scope": "geo",
       "schema": [
         {
-          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml",
+          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.json",
+          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
@@ -455,30 +455,30 @@
       "group": "GeoPose",
       "shaclShapes": null,
       "ldContext": {
-        "prof:hasArtifact": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
+        "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "remoteCacheDir": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/remote_cache/",
+      "remoteCacheDir": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json",
-      "sourceLdContext": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/ypr/context.jsonld",
-      "resolvedSchemaProperties": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/resolvedProperties.json",
-      "sourceFiles": "https://opengeospatial.github.io/geopose-bblocks/_sources/basic/ypr/",
+      "sourceLdContext": "https://opengeospatial.github.io/bblocks-geopose/_sources/basic/ypr/context.jsonld",
+      "resolvedSchemaProperties": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/resolvedProperties.json",
+      "sourceFiles": "https://opengeospatial.github.io/bblocks-geopose/_sources/basic/ypr/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/geopose-bblocks/blob/master/build/tests/geo/geopose/basic/ypr/",
+      "testOutputs": "https://github.com/opengeospatial/bblocks-geopose/blob/master/build/tests/geo/geopose/basic/ypr/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/json-full/geo/geopose/basic/ypr/index.json"
+          "url": "https://opengeospatial.github.io/bblocks-geopose/build/generateddocs/json-full/geo/geopose/basic/ypr/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/build/generateddocs/markdown/geo/geopose/basic/ypr/index.md"
+          "url": "https://opengeospatial.github.io/bblocks-geopose/build/generateddocs/markdown/geo/geopose/basic/ypr/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/geopose-bblocks/bblock/ogc.geo.geopose.basic.ypr"
+          "url": "https://opengeospatial.github.io/bblocks-geopose/bblock/ogc.geo.geopose.basic.ypr"
         }
       },
       "@id": "bblocks://ogc.geo.geopose.basic.ypr",
@@ -496,7 +496,7 @@
       "isProfileOf": null,
       "isDescribedBy": null,
       "skos:topConceptOf": {
-        "@id": "https://opengeospatial.github.io/geopose-bblocks/"
+        "@id": "https://opengeospatial.github.io/bblocks-geopose/"
       }
     }
   ],

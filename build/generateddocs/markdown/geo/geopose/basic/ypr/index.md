@@ -47,7 +47,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
 #### jsonld
 ```jsonld
 {
-  "@context": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
+  "@context": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/context.jsonld",
   "position": {
     "lat": 47.7,
     "lon": -122.3,
@@ -99,7 +99,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
 #### jsonld
 ```jsonld
 {
-  "@context": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
+  "@context": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/context.jsonld",
   "position": {
     "lat": 47.7,
     "lon": -122.3,
@@ -151,7 +151,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
 #### jsonld
 ```jsonld
 {
-  "@context": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
+  "@context": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/context.jsonld",
   "position": {
     "lat": 47.7,
     "lon": -122.3,
@@ -203,7 +203,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
 #### jsonld
 ```jsonld
 {
-  "@context": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
+  "@context": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/context.jsonld",
   "position": {
     "lat": 47.7,
     "lon": -122.3,
@@ -286,7 +286,7 @@ x-jsonld-prefixes:
   geo: http://www.w3.org/2003/01/geo/wgs84_pos#
 x-bblocks-metadata:
   itemIdentifier: ogc.geo.geopose.basic.ypr
-  register: https://opengeospatial.github.io/geopose-bblocks/build/register.json
+  register: https://opengeospatial.github.io/bblocks-geopose/build/register.json
   version: '0.1'
   dateOfLastChange: '2026-11-06'
 
@@ -294,8 +294,8 @@ x-bblocks-metadata:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.json)
-* JSON version: [schema.json](https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/schema.yaml)
+* YAML version: [schema.yaml](https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/schema.json)
+* JSON version: [schema.json](https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/schema.yaml)
 
 
 # JSON-LD Context
@@ -327,7 +327,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld)
+[context.jsonld](https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/context.jsonld)
 
 ## Sources
 
@@ -337,6 +337,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/geopose-bblocks](https://github.com/opengeospatial/geopose-bblocks)
+* URL: [https://github.com/opengeospatial/bblocks-geopose](https://github.com/opengeospatial/bblocks-geopose)
 * Path: `_sources/basic/ypr`
 

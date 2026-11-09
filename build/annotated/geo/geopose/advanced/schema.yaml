@@ -58,6 +58,6 @@ x-jsonld-prefixes:
   geo: http://www.w3.org/2003/01/geo/wgs84_pos#
 x-bblocks-metadata:
   itemIdentifier: ogc.geo.geopose.advanced
-  register: https://opengeospatial.github.io/geopose-bblocks/build/register.json
+  register: https://opengeospatial.github.io/bblocks-geopose/build/register.json
   version: '0.1'
   dateOfLastChange: '2026-11-06'

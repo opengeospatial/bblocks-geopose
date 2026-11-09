@@ -1,5 +1,5 @@
 {
-  "@context": "https://opengeospatial.github.io/geopose-bblocks/build/annotated/geo/geopose/basic/ypr/context.jsonld",
+  "@context": "https://opengeospatial.github.io/bblocks-geopose/build/annotated/geo/geopose/basic/ypr/context.jsonld",
   "position": {
     "lat": 47.7,
     "lon": -122.3,

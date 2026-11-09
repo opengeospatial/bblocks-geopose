@@ -10,10 +10,11 @@
       "title": "Validation report for ogc.geo.geopose.advanced - GeoPose Advanced",
       "bblockName": "GeoPose Advanced",
       "bblockId": "ogc.geo.geopose.advanced",
-      "generated": "2026-11-06T09:24:35.178309+00:00",
+      "generated": "2026-11-09T11:25:01.662463+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
+      "hasWarnings": false,
       "counts": {
         "total": 0,
         "passed": 0,
@@ -24,10 +25,11 @@
       "title": "Validation report for ogc.geo.geopose.basic.quaternion - GeoPose Basic-Quaternion",
       "bblockName": "GeoPose Basic-Quaternion",
       "bblockId": "ogc.geo.geopose.basic.quaternion",
-      "generated": "2026-11-06T09:24:35.183733+00:00",
+      "generated": "2026-11-09T11:25:01.668778+00:00",
       "result": true,
       "items": [],
       "globalErrors": {},
+      "hasWarnings": false,
       "counts": {
         "total": 0,
         "passed": 0,
@@ -38,7 +40,7 @@
       "title": "Validation report for ogc.geo.geopose.basic.ypr - GeoPose Basic-YPR",
       "bblockName": "GeoPose Basic-YPR",
       "bblockId": "ogc.geo.geopose.basic.ypr",
-      "generated": "2026-11-06T09:24:35.198786+00:00",
+      "generated": "2026-11-09T11:25:01.684851+00:00",
       "result": true,
       "items": [
         {
@@ -46,12 +48,13 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/geo/geopose/basic/ypr/example_1_1.json",
-            "url": "https://opengeospatial.github.io/geopose-bblocks/build/tests/geo/geopose/basic/ypr/example_1_1.json",
+            "url": "https://opengeospatial.github.io/bblocks-geopose/build/tests/geo/geopose/basic/ypr/example_1_1.json",
             "exampleIndex": 1,
             "snippetIndex": 1,
             "language": "application/json"
           },
           "result": true,
+          "hasWarnings": false,
           "sections": [
             {
               "name": "FILES",
@@ -101,12 +104,13 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/geo/geopose/basic/ypr/example_2_1.json",
-            "url": "https://opengeospatial.github.io/geopose-bblocks/build/tests/geo/geopose/basic/ypr/example_2_1.json",
+            "url": "https://opengeospatial.github.io/bblocks-geopose/build/tests/geo/geopose/basic/ypr/example_2_1.json",
             "exampleIndex": 2,
             "snippetIndex": 1,
             "language": "application/json"
           },
           "result": true,
+          "hasWarnings": false,
           "sections": [
             {
               "name": "FILES",
@@ -156,12 +160,13 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/geo/geopose/basic/ypr/example_3_1.json",
-            "url": "https://opengeospatial.github.io/geopose-bblocks/build/tests/geo/geopose/basic/ypr/example_3_1.json",
+            "url": "https://opengeospatial.github.io/bblocks-geopose/build/tests/geo/geopose/basic/ypr/example_3_1.json",
             "exampleIndex": 3,
             "snippetIndex": 1,
             "language": "application/json"
           },
           "result": true,
+          "hasWarnings": false,
           "sections": [
             {
               "name": "FILES",
@@ -211,12 +216,13 @@
             "type": "EXAMPLE",
             "requireFail": false,
             "filename": "build/tests/geo/geopose/basic/ypr/example_4_1.json",
-            "url": "https://opengeospatial.github.io/geopose-bblocks/build/tests/geo/geopose/basic/ypr/example_4_1.json",
+            "url": "https://opengeospatial.github.io/bblocks-geopose/build/tests/geo/geopose/basic/ypr/example_4_1.json",
             "exampleIndex": 4,
             "snippetIndex": 1,
             "language": "application/json"
           },
           "result": true,
+          "hasWarnings": false,
           "sections": [
             {
               "name": "FILES",
@@ -263,6 +269,7 @@
         }
       ],
       "globalErrors": {},
+      "hasWarnings": false,
       "counts": {
         "total": 4,
         "passed": 4,
